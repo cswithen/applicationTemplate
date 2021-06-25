@@ -5,7 +5,7 @@ import {logout} from '../store'
 
 const Navbar = ({handleClick, isLoggedIn}) => (
   <div>
-    <h1>BoilerMaker</h1>
+    <h1>HomePage</h1>
     <nav>
       {isLoggedIn ? (
         <div>

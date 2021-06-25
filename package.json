@@ -4,9 +4,13 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "build" : "webpack",
+    "build:dev" : "npm run build -- --watch --mode=development",
+    "seed" : "node script/seed.js",
     "start": "node server",
-    "start-dev": "webpack -w & nodemon server"
+    "start-dev": "webpack -w & nodemon server",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start-server": "JWT=shh nodemon server -e html,js,scss --ignore public --ignore client"
   },
   "author": "",
   "license": "ISC",

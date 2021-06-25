@@ -11,9 +11,9 @@ export const Home = props => {
   )
 }
 
-const mapState = staet => {
+const mapState = state => {
   return {
-    username: staet.auth.username
+    username: state.auth.username
   }
 }
 

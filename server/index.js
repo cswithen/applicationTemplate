@@ -13,7 +13,7 @@ const init = async () => {
     // else {
     //   await db.sync()
     // }
-    app.listen(PORT, () => console.log(`Mixing it up on port ${PORT}`))
+    app.listen(PORT, () => console.log(`Listening on ${PORT}`))
   } catch (ex) {
     console.log(ex)
   }
